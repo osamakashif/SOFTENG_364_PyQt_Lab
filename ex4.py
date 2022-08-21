@@ -46,7 +46,7 @@ class Counter(QWidget):
 
         layout.addWidget(quit_button)
 
-        self.setWindowTitle('Structured Layout - GridLayout')
+        self.setWindowTitle('Second Counter - Threading Example')
         self.setGeometry(300, 300, 400, 250) # (starting x coordinate on screen for window, starting y coordinate on screen for window, width, height)
         self.show()
     

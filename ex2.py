@@ -32,7 +32,8 @@ class Dynamic(QWidget):
         quit_button.clicked.connect(self.close)
 
         vbox.addWidget(quit_button)
-        
+
+        self.setWindowTitle('Dynamic Layout - Box Layouts')
         self.show()
     
     def closeEvent(self, event):
