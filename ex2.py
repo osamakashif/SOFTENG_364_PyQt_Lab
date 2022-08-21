@@ -12,12 +12,26 @@ class Dynamic(QWidget):
 
     def initUI(self):
         hbox1 = QHBoxLayout()
+        hbox1.addWidget(QLabel('This is the first horizontal box'))
+        hbox1.addWidget(QLabel('This is the second entry to the first horizontal box'))
+        hbox2 = QHBoxLayout()
+        hbox2.addWidget(QLabel('This is the second horizontal box'))
+        hbox3 = QHBoxLayout()
+        hbox3.addWidget(QLabel('This is the third horizontal box inside the second horizontal box'))
+        hbox2.addLayout(hbox3)
         vbox = QVBoxLayout()
         self.setLayout(vbox)
+
+        vbox.addWidget(QLabel('This is a vertical box'))
+        vbox.addLayout(hbox1)
+        vbox.addLayout(hbox2)
+        vbox.addWidget(QLabel('Above this label are two horizontal boxes and a label inside this vertical box'))
 
         quit_button = QPushButton('Quit', self)
         quit_button.resize(quit_button.sizeHint())
         quit_button.clicked.connect(self.close)
+
+        vbox.addWidget(quit_button)
         
         self.show()
     
