@@ -2,7 +2,7 @@ __author__ = 'Osama Kashif'
 __version__ = '1.0.0'
 
 import sys
-from PyQt5.QtWidgets import (QApplication, QWidget, QHBoxLayout, QVBoxLayout, QLabel, QLineEdit, QPushButton, QMessageBox)
+from PyQt5.QtWidgets import (QApplication, QWidget, QHBoxLayout, QVBoxLayout, QLabel, QPushButton, QMessageBox)
 
 class Dynamic(QWidget):
     
