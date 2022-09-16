@@ -9,7 +9,7 @@ from PyQt5.QtNetwork import QNetworkAccessManager, QNetworkRequest
 
 ICON_IMAGE_URL="https://osamakashif.dev/logo192.png" # Example online image url
 
-class Counter(QWidget):
+class Styled(QWidget):
     
     def __init__(self):
         super().__init__()
@@ -81,5 +81,5 @@ class Counter(QWidget):
 
 if __name__ == '__main__':
     app = QApplication(sys.argv)
-    ex = Counter()
+    ex = Styled()
     sys.exit(app.exec_())
